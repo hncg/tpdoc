@@ -146,7 +146,7 @@
 
 #### host/v1/user/{user_id}/score
 
-|参数名|类型|含义|
+    |参数名|类型|含义|
     |class_id|in:1,2|科目一二，科目三四|
     |rank_score|numeric|所得分数|
     |rank_time|numeric|做题时间|
