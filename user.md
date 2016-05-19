@@ -6,40 +6,40 @@
 
 #### host/v1/login
 
-|参数名|类型|
-|phone|int[11]|
-|passwd|string[6:32]|
+    |参数名|类型|
+    |phone|int[11]|
+    |passwd|string[6:32]|
 
 #### 返回示例
 
 
-{
-    "code": 2,
-    "message": "帐号或密码错误"
-}
+    {
+        "code": 2,
+        "message": "帐号或密码错误"
+    }
 
-{
-    "user": {
-        "id": 2864,
-        "userId": 0,
-        "userAccount": "18074471987",
-        "userEmail": "",
-        "userPwd": "86e1e22eb2212fcf836d5dac7949ddaf",
-        "userClassId": 1,
-        "userLock": 0,
-        "loginCount": 0,
-        "userName": "",
-        "userPhone": "",
-        "userSex": "",
-        "userArea": "",
-        "userWexin": "",
-        "userQQ": "",
-        "userAddTime": "2016-05-10 11:43:27",
-        "training_times": 1,
-        "expired_time": "2016-05-11 10:52:38"
-    },
-    "sid": "5d2e27c12a00649bf82cbf52cae0296d1d2f6292"
-}
+    {
+        "user": {
+            "id": 2864,
+            "userId": 0,
+            "userAccount": "18074471987",
+            "userEmail": "",
+            "userPwd": "86e1e22eb2212fcf836d5dac7949ddaf",
+            "userClassId": 1,
+            "userLock": 0,
+            "loginCount": 0,
+            "userName": "",
+            "userPhone": "",
+            "userSex": "",
+            "userArea": "",
+            "userWexin": "",
+            "userQQ": "",
+            "userAddTime": "2016-05-10 11:43:27",
+            "training_times": 1,
+            "expired_time": "2016-05-11 10:52:38"
+        },
+        "sid": "5d2e27c12a00649bf82cbf52cae0296d1d2f6292"
+    }
 
 2. 注册
 
@@ -47,22 +47,22 @@
 
 #### host/v1/register
 
-|参数名|类型|
-|phone|int[11]|
-|passwd|string[6:32]|
-|verify|int[6]|
+    |参数名|类型|
+    |phone|int[11]|
+    |passwd|string[6:32]|
+    |verify|int[6]|
 
 #### 返回示例
 
-{
-    "code": 1,
-    "message": "ok"
-}
+    {
+        "code": 1,
+        "message": "ok"
+    }
 
-{
-    "code": 9,
-    "message": "用户已经存在"
-}
+    {
+        "code": 9,
+        "message": "用户已经存在"
+    }
 
 3. 找回密码
 
@@ -77,15 +77,15 @@
 
 #### 返回示例
 
-{
-    "code": 1,
-    "message": "ok"
-}
+    {
+        "code": 1,
+        "message": "ok"
+    }
 
-{
-    "code": 10,
-    "message": "用户不存在"
-}
+    {
+        "code": 10,
+        "message": "用户不存在"
+    }
 
 4. 获取问题
 
@@ -124,20 +124,20 @@
 
 #### host/v1/send_phone_perify
 
-|phone|int[11]|
-|temp_id|in:82522|
+    |phone|int[11]|
+    |temp_id|in:82522|
 
 #### 返回示例
 
-{
-    "code": 1,
-    "message": "ok"
-}
+    {
+        "code": 1,
+        "message": "ok"
+    }
 
-{
-    "code": 5,
-    "message": "短信发送失败,联系客服试试吧"
-}
+    {
+        "code": 5,
+        "message": "短信发送失败,联系客服试试吧"
+    }
 
 6.记录分数
 
@@ -154,15 +154,15 @@
 
 #### 返回示例
 
-{
-    "code": 1,
-    "message": "ok"
-}
+    {
+        "code": 1,
+        "message": "ok"
+    }
 
-{
-    "code": 10,
-    "message": "用户不存在"
-}
+    {
+        "code": 10,
+        "message": "用户不存在"
+    }
 
 
 6.获取分数记录
@@ -173,16 +173,16 @@
 
 #### 返回示例
 
-[
-    {
-        "id": 88,
-        "userId": 57134094,
-        "qaClassId": 0,
-        "rankId": 0,
-        "rankScore": 0,
-        "rankTime": 0,
-        "rankCount": 0,
-        "rankAddTime": "2015-01-20 22:56:21"
-    },
-    ...
-]
+    [
+        {
+            "id": 240,
+            "userId": 57134094,
+            "qaClassId": 1,
+            "rankId": 88736267,
+            "rankScore": 2,
+            "rankTime": 49,
+            "rankCount": 6,
+            "rankAddTime": "2015-02-05 11:05:13"
+        },
+        ...
+    ]
