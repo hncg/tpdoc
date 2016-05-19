@@ -124,6 +124,7 @@
 
 #### host/v1/send_phone_perify
 
+    |参数名|类型|
     |phone|int[11]|
     |temp_id|in:82522|
 
@@ -146,10 +147,10 @@
 #### host/v1/user/{user_id}/score
 
 |参数名|类型|含义|
-|class_id|in:1,2|科目一二，科目三四|
-|rank_score|numeric|所得分数|
-|rank_time|numeric|做题时间|
-|rank_count|numeric|做题个数|
+    |class_id|in:1,2|科目一二，科目三四|
+    |rank_score|numeric|所得分数|
+    |rank_time|numeric|做题时间|
+    |rank_count|numeric|做题个数|
 
 
 #### 返回示例
