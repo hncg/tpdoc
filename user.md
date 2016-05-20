@@ -187,3 +187,27 @@
         },
         ...
     ]
+
+7.验证手机号码
+
+#### http method post
+
+#### host/v1/verify_phone
+    |参数名|类型|含义|
+    |phone|int|手机号码|
+    |openid|string|第三方登陆openid|
+    |name|string|姓名|
+    |area|string|地区|
+    |verify|int|验证码|
+
+#### 返回示例
+    {
+        "code": 1,
+        "message": "ok"
+    }
+
+    {
+        "code": 13,
+        "message": "手机验证失败"
+    }
+
